@@ -1,0 +1,22 @@
+# Runtime/private material stays outside source control.
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.sqlite
+*.sqlite3
+*.db
+*.db-wal
+*.db-shm
+data/raw/
+data/private/
+var/
+secrets/
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+dist/
+
+# Governed specs and sanitized verification evidence are committed.

@@ -1,0 +1,36 @@
+Mothlight ML-W000 — final specification verification
+UTC: 2026-10-17T16:43:37.895119+00:00
+Working directory: /workspace/scratch/101adbc082ac/mothlight
+Python: 3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]
+Platform: Linux-6.18.55-x86_64-with-glibc2.39
+Scope: Markdown structure, stable IDs/work coverage, and source-file integrity.
+Not performed: application/runtime, real corpus, deployment, Hermes setup or external visitor tests.
+Source manifest: 19 governed/configuration/checker files; evidence reports are excluded to avoid self-reference.
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/check_specs.py
+Structural specs check: 20 documents; 153 local links; 73 definitions; 266 id references; 6 work rows
+PASS. Structural only; runtime behavior and semantic acceptance are not assessed.
+Exit code: 0
+
+$ sha256sum --check specs/evidence/ML-W000/source-manifest.sha256
+.github/pull_request_template.md: OK
+.gitignore: OK
+AGENTS.md: OK
+CLAUDE.md: OK
+README.md: OK
+scripts/check_specs.py: OK
+specs/00_PROJECT_INTAKE.md: OK
+specs/01_PROJECT_CONTEXT.md: OK
+specs/02_STRATEGIC_PLAN.md: OK
+specs/03_MASTER_PRODUCTION_SPEC.md: OK
+specs/04_CLAUDE_CODE_BUILD_PROMPT.md: OK
+specs/05_BUILD_REVIEW.md: OK
+specs/06_PATCH_PLAN.md: OK
+specs/07_KNOWN_GAPS.md: OK
+specs/08_CHANGELOG_AI.md: OK
+specs/DATA_REGISTRY.md: OK
+specs/DECISION_LOG.md: OK
+specs/MODEL_REGISTRY.md: OK
+specs/UI_REFERENCE.md: OK
+Exit code: 0
+
